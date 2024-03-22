@@ -163,6 +163,11 @@ sudo systemctl enable mysql
 sudo mysql_secure_installation
 ```
 
+- Check if MySQL accept remote connection (bind-address = 0.0.0.0)
+```
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+```
+
 - Login to MySQL shell (example: username: root)
 ```
 mysql -u root -p
